@@ -1,0 +1,215 @@
+.outmost-container{
+    display: grid;
+    max-width: 900px;
+    background-color: lightgray;
+    grid-template-columns: 200px 175px 375px 150px;
+    grid-template-rows: 300px 100px 200px;
+}
+
+.warning{
+    display: none;
+}
+
+
+
+.first-layer{
+    display: grid;
+
+}
+
+.f1-1{
+    grid-column: span 2;
+    grid-template-columns: 1fr 4fr 2.5fr 1.5fr 5fr 1fr 7fr 3.5fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr 3fr 0.5fr 1fr 1.5fr;;
+}
+
+.f2-2{
+    grid-template-columns: 1.4fr 7fr 3.5fr;
+    grid-template-rows: 1.5fr 1fr;
+}
+
+.f1-3{
+    grid-row: span 2;
+    grid-template-columns: 0.5fr 8fr 1fr;
+    grid-template-rows: 0.5fr 5.5fr 1fr 7fr 0.5fr;
+}
+
+.f1-4{
+    grid-row: span 3;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-rows: 2fr 7fr 3fr;
+}
+
+.f2-1{
+    grid-template-columns: 1fr 4fr 1fr 4fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.f3-1{
+    grid-template-columns: 1.13fr 4.25fr 4fr 2fr;
+    grid-template-rows: 1fr 0.5fr 2fr 0.5fr 1.5fr 0.5fr;
+}
+
+.f3-2{
+    grid-column: span 2;
+    grid-template-columns: 1fr 2.5fr 1.5fr 4fr 4.5fr 4fr 1.5fr 2.5fr 2.5fr;
+    grid-template-rows: 2fr 2fr 1.5fr 0.5fr 1fr;
+}
+
+.blank{
+    background-color: lightgrey;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: gold;
+}
+
+.green{
+    background-color:green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.gray{
+    background-color: darkgray;
+}
+
+.box{
+    border-radius: 15px;
+    border: 5px solid black
+}
+
+.track{
+    width: 350px;
+    height: 150px;
+    background-color: #f28b82; /* Track color */
+    border-radius: 75px; /* Makes the track oval */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px auto;
+}
+
+.grass {
+    width: 275px;
+    height: 105px;
+    background-color: #d7fbd7; /* Field color */
+    border-radius: 50px; /* Makes the field oval */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.flexbox-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.row-span-2{
+    grid-row: span 2;
+}
+
+.row-span-3{
+    grid-row: span 3;
+}
+
+.row-span-4{
+    grid-row: span 4;
+}
+
+.row-span-5{
+    grid-row: span 5;
+}
+
+.row-span-6{
+    grid-row: span 6;
+}
+
+.column-span-2{
+    grid-column: span 2;
+}
+
+.column-span-3{
+    grid-column: span 3;
+}
+
+.column-span-4{
+    grid-column: span 4;
+}
+
+.column-span-5{
+    grid-column: span 5;
+}
+
+.column-span-6{
+    grid-column: span 6;
+}
+
+.column-span-7{
+    grid-column: span 7;
+}
+
+.column-span-8{
+    grid-column: span 8;
+}
+
+@media screen and (orientation: portrait) {
+    .warning{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexbox-frame *{
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) and (min-width: 300px) {
+    .outmost-container{
+        display: grid;
+        max-width: 540px;
+        background-color: lightgray;
+        grid-template-columns: 120px 105px 225px 90px;
+        grid-template-rows: 180px 60px 120px;
+    }   
+
+    .track{
+        width: 210px;
+        height: 90px;
+        background-color: #f28b82; /* Track color */
+        border-radius: 75px; /* Makes the track oval */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 12px auto;
+    }
+    
+    .grass {
+        width: 165px;
+        height: 63px;
+        background-color: #d7fbd7; /* Field color */
+        border-radius: 50px; /* Makes the field oval */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    
+}
